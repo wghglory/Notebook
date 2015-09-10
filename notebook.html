@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/note.css">
+</head>
+<body>
+    <aside class="leftSide">
+        <div class="leftHeader">
+            <img src="images/notelogo.png" width="40" height="40" alt="logo" /> <span class="appName">NoteBook</span> <button class="new" data-toggle="tooltip" data-placement="right" title="New"><span class="glyphicon glyphicon-plus newIcon" aria-hidden="true"></span></button>
+        </div>
+        <div class="search">
+            <button class="btn btn-default searchButton"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button><input type="text" placeholder="search" class="searchBox">
+        </div>
+        <div class="leftWrapper">
+            <ul class="noteList">
+                <li class="activeLi">
+                    <h3 class="activeHeader">New Note</h3><span class="closeLi close" aria-hidden="true">&times;</span>
+                    <div class="activeContent">empty note</div>
+                    <p class="time"></p>
+                    <input type="hidden" class="noteId"/>
+                </li>
+                <!--<li>
+                    <h3>New Note</h3><span class="close" aria-hidden="true">&times;</span>
+                    <div class="content">empty note</div>
+                    <p class="time">time</p>
+                </li>-->
+            </ul>
+        </div>
+    </aside>
+    <section class="rightSide">
+        <h2>
+            <span class="time"></span><button class="btn btn-success save">Save</button>         
+        </h2>
+        <div class="alert alert-warning" role="alert">
+            <strong>Warning!</strong> title and content cannot be empty!
+        </div>
+        <div class="paper">
+            <input type="hidden" id="currentNoteId"/>
+            <h4><input type="text" placeholder="Type your title and press Tab to input note body" name="title" class="title"/>
+            </h4>
+            <textarea placeholder="Type your note content" class="content"></textarea>
+        </div>
+        
+    </section>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/tools.js" type="text/javascript"></script>
+    <script src="js/datapattern2.js" type="text/javascript"></script>
+    <script src="js/noteApp.js"></script>
+</body>
+</html>

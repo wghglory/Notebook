@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <textarea id="test"></textarea>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/ckeditor/ckeditor.js"></script>
+    <script>
+        var textarea = document.getElementById("test");
+        CKEDITOR.replace($('#test')[0], {
+            height: 500
+        });
+    </script>
+</body>
+</html>

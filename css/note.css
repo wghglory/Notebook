@@ -1,0 +1,35 @@
+﻿@charset "utf-8";html,body{padding:0;margin:0;font-size:12px;font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;color:#000;height:100%;}
+h2,h3,h4,h5,img,a,dl,dt,dd,ul,li,p{padding:0;margin:0;list-style:none;border:0;}
+
+.leftSide{width:30%;height:100%;padding:20px;float:left;overflow:hidden;}
+.leftHeader img{height:40px;float:left;}
+.appName{font-size:28px;padding-left:10px;color:#2E2828;height:40px;line-height:40px;}
+.new{float:right;margin-right:20px;margin-top:5px;background:#000;border:none;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;width:35px;height:32px}
+.newIcon{color:#fff;vertical-align:text-top;}
+.search{padding-top:12px;padding-bottom:10px;}
+.searchButton{background:#eee;border-right:none;-webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:0px;-webkit-border-bottom-right-radius:0px;-webkit-border-bottom-left-radius:4px;-moz-border-radius-topleft:4px;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:0px;-moz-border-radius-bottomleft:4px;border-top-left-radius:4px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:4px;}
+.searchBox{height:34px;padding:9px;width:85%;}
+.leftWrapper{height:100%;}
+.noteList{height:85%;overflow-y:scroll;}
+.noteList li{margin-bottom:4px;padding:12px 15px;border:1px solid #ddd;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.noteList li.activeLi{background:#65bd77;border:1px solid #65bd77;}
+.noteList li h3{color:#000;font-size:16px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.noteList li h3.activeHeader{color:#fff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.closeLi{float:right;}
+.noteList div.content{padding:3px 0;font-size:10px;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.noteList div.activeContent{padding:3px 0;font-size:10px;color:#fff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.noteList p.time{color:#777;font-size:10px;}
+
+.rightSide{width:70%;float:left;height:100%;}
+.rightSide h2{padding:20px;background:#f4f4f4;color:#717171;font-size:24px;font-weight:normal;border-left:1px solid #b5b5b5;}
+.rightSide .save{margin-left:30px;}
+.paper {font:16px 'AmericanTypewriter', Cambria, Georgia;color:#282625;margin:0 auto;width:100%;height:85%;padding:21px 55px 27px;position:relative;border:1px solid #B5B5B5;background:white;background:-webkit-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;/*DFE8EC*/  /*00b0d7*/
+background:-moz-linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;background:linear-gradient(top, #DFE8EC 0%, white 8%) 0 57px;-webkit-background-size:100% 30px;-moz-background-size:100% 30px;-ms-background-size:100% 30px;background-size:100% 30px;}
+.paper::before {content:"";z-index:-1;margin:0 1px;width:706px;height:10px;position:absolute;bottom:-3px;left:0;border:1px solid #B5B5B5;}
+.paper::after {content:'';position:absolute;width:0px;top:0;left:39px;bottom:0;border-left:1px solid #F8D3D3;}
+
+.paper h4{ padding-top: 12px;font-size: 20px;}
+.paper input.title{border:none;background:transparent;font-weight:bold;width:100%;outline:none;border:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;}
+.paper textarea.content{border:none;background:transparent;width:100%;height:100%;line-height:30px;outline:none;border:none !important;-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important;} 
+
+.alert{margin-bottom:0;display:none;}

@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="static">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document" style="width:1200px;">
+    <div class="modal-content" style="height:700px;">
+      
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    $('.modal-content').load('notebook.html', function () {
+        $('.rightSide h2').append('<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>');  //load temp and add modal close button to template
+        
+    });
+	
+	$(function(){
+	    //alert($('.rightSide h2 span.time').text());  
+	    //$('[data-toggle="tooltip"]').tooltip();
+	});
+	
+</script>
+</body>
+</html>
